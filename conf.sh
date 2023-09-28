@@ -7,8 +7,8 @@ rm -rf ~/My-zsh-conf
 git clone https://github.com/maher-naija-pro/My-zsh-conf.git ~/My-zsh-conf
 rm -rf ~/My_tmux_conf
 git clone https://github.com/maher-naija-pro/My_tmux_conf.git ~/My_tmux_conf
-rm -rf ~/My_ssh
-git clone https://github.com/maher-naija-pro/My-zsh-history.git ~/My_ssh 
+rm -rf ~/My-zsh-history
+git clone https://github.com/maher-naija-pro/My-zsh-history.git ~/My-zsh-history
 rm -rf ~/My_ssh
 git clone https://github.com/maher-naija-pro/My_ssh.git ~/My_ssh
 rm -rf  ~/My-aws-cli
@@ -29,6 +29,7 @@ ln -s ~/My_tmux_conf/.tmux.conf   ~/.tmux.conf
 rm -rf  ~/.gitconfig
 ln -s ~/My-Git-Config/.gitconfig  ~/.gitconfig
 
+cp /tmp/authorized_keys  ~/.ssh/
 cp  ~/.ssh/authorized_keys /tmp
 rm -rf ~/.ssh
 ln -s My_ssh  ~/.ssh 
