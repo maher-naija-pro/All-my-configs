@@ -7,14 +7,6 @@ git clone https://github.com/maher-naija-pro/My-zsh-history.git ~/My_ssh
 git clone https://github.com/maher-naija-pro/My_ssh.git ~/My_ssh
 git clone https://github.com/maher-naija-pro/My-aws-cli.git  ~/My-aws-cli 
 
-
-
-sudo yum remove awscli
-curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-unzip awscliv2.zip
-sudo ./aws/install
-
-
 rm -rf ~/.aws
 ln -s My-aws-cli  ~/.aws
 rm -rf  ~/.vimrc
@@ -33,5 +25,4 @@ ln -s My_ssh  ~/.ssh
 rm -rf  .zsh_history && ln -s My-zsh-history/.zsh_history   .zsh_history 
 
  
-    conf aws 
     
