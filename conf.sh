@@ -21,9 +21,9 @@ ln -s ~/My-aws-cli  ~/.aws
 rm -rf  ~/.vimrc
 ln -s ~/My-VimRC/.vimrc  ~/.vimrc
 rm -rf  ~/.zshrc
-ln -s ~/zsh_config/.zshrc  ~/.zshrc
+ln -s ~/My-zsh-conf/.zshrc  ~/.zshrc
 rm -rf  ~/.p10k.zsh
-ln -s ~/zsh_config/.p10k.zsh   ~/.p10k.zsh
+ln -s ~/My-zsh-conf/.p10k.zsh   ~/.p10k.zsh
 rm -rf   ~/.tmux.conf
 ln -s ~/tmux_conf/.tmux.conf   ~/.tmux.conf
 rm -rf  ~/.gitconfig
