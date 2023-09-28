@@ -17,19 +17,19 @@ git clone https://github.com/maher-naija-pro/My-aws-cli.git  ~/My-aws-cli
 
 
 rm -rf ~/.aws
-ln -s My-aws-cli  ~/.aws
+ln -s ~/My-aws-cli  ~/.aws
 rm -rf  ~/.vimrc
-ln -s My-VimRC/.vimrc  ~/.vimrc
+ln -s ~/My-VimRC/.vimrc  ~/.vimrc
 rm -rf  ~/.zshrc
-ln -s zsh_config/.zshrc  ~/.zshrc
+ln -s ~/zsh_config/.zshrc  ~/.zshrc
 rm -rf  ~/.p10k.zsh
-ln -s zsh_config/.p10k.zsh   ~/.p10k.zsh
+ln -s ~/zsh_config/.p10k.zsh   ~/.p10k.zsh
 rm -rf   ~/.tmux.conf
-ln -s tmux_conf/.tmux.conf   ~/.tmux.conf
+ln -s ~/tmux_conf/.tmux.conf   ~/.tmux.conf
 rm -rf  ~/.gitconfig
-ln -s My-Git-Config/.gitconfig  ~/.gitconfig
+ln -s ~/My-Git-Config/.gitconfig  ~/.gitconfig
 
-cp .ssh/authorized_keys /tmp
+cp  ~/.ssh/authorized_keys /tmp
 rm -rf ~/.ssh
 ln -s My_ssh  ~/.ssh 
 cp /tmp/authorized_keys  ~/.ssh/
