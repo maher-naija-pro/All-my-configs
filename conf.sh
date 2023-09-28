@@ -21,6 +21,8 @@ rm -rf  ~/.gitconfig
 ln -s My-Git-Config/.gitconfig  ~/.gitconfig
 rm -rf ~/.ssh
 ln -s My_ssh  ~/.ssh 
+chmod -r 600  ~/.ssh/*.key
+chmod -r 600  ~/.ssh/*.rsa
 
 rm -rf  .zsh_history && ln -s My-zsh-history/.zsh_history   .zsh_history 
 
