@@ -14,6 +14,8 @@ git clone https://github.com/maher-naija-pro/My_ssh.git ~/My_ssh
 rm -rf  ~/My-aws-cli
 git clone https://github.com/maher-naija-pro/My-aws-cli.git  ~/My-aws-cli 
 
+
+
 rm -rf ~/.aws
 ln -s My-aws-cli  ~/.aws
 rm -rf  ~/.vimrc
@@ -26,12 +28,12 @@ rm -rf   ~/.tmux.conf
 ln -s tmux_conf/.tmux.conf   ~/.tmux.conf
 rm -rf  ~/.gitconfig
 ln -s My-Git-Config/.gitconfig  ~/.gitconfig
+
+cp .ssh/authorized_keys /tmp
 rm -rf ~/.ssh
 ln -s My_ssh  ~/.ssh 
+cp /tmp/authorized_keys  ~/.ssh/
 chmod 600  ~/.ssh/*.key
 chmod 600  ~/.ssh/*.rsa
 
 rm -rf   ~/.zsh_history && ln -s My-zsh-history/.zsh_history    ~/.zsh_history 
-#
-# 
-#    
