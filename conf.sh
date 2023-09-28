@@ -25,7 +25,7 @@ ln -s ~/My-zsh-conf/.zshrc  ~/.zshrc
 rm -rf  ~/.p10k.zsh
 ln -s ~/My-zsh-conf/.p10k.zsh   ~/.p10k.zsh
 rm -rf   ~/.tmux.conf
-ln -s ~/tmux_conf/.tmux.conf   ~/.tmux.conf
+ln -s ~/My_tmux_conf/.tmux.conf   ~/.tmux.conf
 rm -rf  ~/.gitconfig
 ln -s ~/My-Git-Config/.gitconfig  ~/.gitconfig
 
