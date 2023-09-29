@@ -18,10 +18,6 @@ if [[ ! -d ~/My_tmux_conf   ]]
 then
         git clone https://github.com/maher-naija-pro/My_tmux_conf.git ~/My_tmux_conf
 fi
-if [[ ! -d ~/My-zsh-history   ]]
-then
-        git clone https://github.com/maher-naija-pro/My-zsh-history.git ~/My-zsh-history
-fi
 
 if [[ ! -d ~/All-my-configs  ]]
 then
@@ -29,8 +25,6 @@ then
 fi
 
 
-rm -rf ~/.aws
-ln -s ~/My-aws-cli  ~/.aws
 rm -rf  ~/.vimrc
 ln -s ~/My-VimRC/.vimrc  ~/.vimrc
 rm -rf  ~/.zshrc
@@ -42,4 +36,3 @@ ln -s ~/My_tmux_conf/.tmux.conf   ~/.tmux.conf
 rm -rf  ~/.gitconfig
 ln -s ~/My-Git-Config/.gitconfig  ~/.gitconfig
 
-rm -rf   ~/.zsh_history && ln -s My-zsh-history/.zsh_history    ~/.zsh_history 
