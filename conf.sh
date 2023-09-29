@@ -29,9 +29,8 @@ ln -s ~/My_tmux_conf/.tmux.conf   ~/.tmux.conf
 rm -rf  ~/.gitconfig
 ln -s ~/My-Git-Config/.gitconfig  ~/.gitconfig
 
-cp /tmp/authorized_keys  ~/.ssh/
 cp  ~/.ssh/authorized_keys /tmp
-rm -rf ~/.ssh
+mv  ~/.ssh ~/.ssh-old 
 ln -s My_ssh  ~/.ssh 
 cp /tmp/authorized_keys  ~/.ssh/
 chmod 600  ~/.ssh/*.key
