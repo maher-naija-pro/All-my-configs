@@ -46,7 +46,11 @@ ln -s ~/My_tmux_conf/.tmux.conf   ~/.tmux.conf
 rm -rf  ~/.gitconfig
 ln -s ~/My-Git-Config/.gitconfig  ~/.gitconfig
 
-cp  ~/.ssh/authorized_keys /tmp
+fi
+if [[ ! -f ~/.ssh/authorized_keys   ]]
+then
+  cp  ~/.ssh/authorized_keys /tmp
+fi 
 mv  ~/.ssh ~/.ssh-old 
 ln -s My_ssh  ~/.ssh 
 cp /tmp/authorized_keys  ~/.ssh/
