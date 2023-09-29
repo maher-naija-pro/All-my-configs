@@ -1,4 +1,7 @@
 #!/usr/bin/bash
+sudo yum install -y git 
+
+
 if [[ ! -d ~/My-Git-Config   ]]
 then
         git clone https://github.com/maher-naija-pro/My-Git-Config.git  ~/My-Git-Config
