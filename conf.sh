@@ -1,18 +1,32 @@
 #!/usr/bin/bash
-rm -rf ~/My-Git-Config 
-git clone https://github.com/maher-naija-pro/My-Git-Config.git  ~/My-Git-Config
-rm -rf ~/My-VimRC
-git clone https://github.com/maher-naija-pro/My-VimRC.git ~/My-VimRC
-rm -rf ~/My-zsh-conf
-git clone https://github.com/maher-naija-pro/My-zsh-conf.git ~/My-zsh-conf
-rm -rf ~/My_tmux_conf
-git clone https://github.com/maher-naija-pro/My_tmux_conf.git ~/My_tmux_conf
-rm -rf ~/My-zsh-history
-git clone https://github.com/maher-naija-pro/My-zsh-history.git ~/My-zsh-history
-rm -rf ~/My_ssh
-git clone https://github.com/maher-naija-pro/My_ssh.git ~/My_ssh
-rm -rf  ~/My-aws-cli
-git clone https://github.com/maher-naija-pro/My-aws-cli.git  ~/My-aws-cli 
+if [[ ! -d ~/My-Git-Config   ]]
+then
+        git clone https://github.com/maher-naija-pro/My-Git-Config.git  ~/My-Git-Config
+fi
+if [[ ! -d ~/My-VimRC   ]]
+then
+        git clone https://github.com/maher-naija-pro/My-VimRC.git ~/My-VimRC
+fi
+if [[ ! -d ~/My-zsh-conf  ]]
+then
+        git clone https://github.com/maher-naija-pro/My-zsh-conf.git ~/My-zsh-conf
+fi
+if [[ ! -d ~/My_tmux_conf   ]]
+then
+        git clone https://github.com/maher-naija-pro/My_tmux_conf.git ~/My_tmux_conf
+fi
+if [[ ! -d ~/My-zsh-history   ]]
+then
+        git clone https://github.com/maher-naija-pro/My-zsh-history.git ~/My-zsh-history
+fi
+if [[ ! -d ~/My_ssh   ]]
+then
+        git clone https://github.com/maher-naija-pro/My_ssh.git ~/My_ssh
+fi
+if [[ ! -d ~/My-aws-cli   ]]
+then
+        git clone https://github.com/maher-naija-pro/My-aws-cli.git  ~/My-aws-cli
+fi
 
 
 
