@@ -47,14 +47,5 @@ rm -rf  ~/.gitconfig
 ln -s ~/My-Git-Config/.gitconfig  ~/.gitconfig
 
 fi
-#if [[ ! -f ~/.ssh/authorized_keys   ]]
-#then
-#  cp  ~/.ssh/authorized_keys /tmp
-#fi 
-#mv  ~/.ssh ~/.ssh-old 
-#ln -s My_ssh  ~/.ssh 
-#cp /tmp/authorized_keys  ~/.ssh/
-#chmod 600  ~/.ssh/*.key
-#chmod 600  ~/.ssh/*.rsa
 
 rm -rf   ~/.zsh_history && ln -s My-zsh-history/.zsh_history    ~/.zsh_history 
