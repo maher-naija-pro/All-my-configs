@@ -46,6 +46,4 @@ ln -s ~/My_tmux_conf/.tmux.conf   ~/.tmux.conf
 rm -rf  ~/.gitconfig
 ln -s ~/My-Git-Config/.gitconfig  ~/.gitconfig
 
-fi
-
 rm -rf   ~/.zsh_history && ln -s My-zsh-history/.zsh_history    ~/.zsh_history 
