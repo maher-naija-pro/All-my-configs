@@ -31,8 +31,13 @@ then
         git clone https://github.com/maher-naija-pro/My-aws-cli.git  ~/My-aws-cli
 fi
 
+if [[ ! -d ~/My-aws-cli    ]]
+then
+        git clone https://github.com/maher-naija-pro/All-my-configs.git  ~/All-my-configs 
+fi
 
 
+rm -rf ~/All-my-configs
 rm -rf ~/.aws
 ln -s ~/My-aws-cli  ~/.aws
 rm -rf  ~/.vimrc
