@@ -26,7 +26,7 @@ then
   cp  ~/.ssh/authorized_keys /tmp
 fi
 mv  ~/.ssh ~/.ssh-old
-ln -s My_ssh  ~/.ssh
+ln -s  ~/My_ssh  ~/.ssh
 cp /tmp/authorized_keys  ~/.ssh/
 chmod 600  ~/.ssh/*.key
 chmod 600  ~/.ssh/*.rsa
