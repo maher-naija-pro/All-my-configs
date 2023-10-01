@@ -23,9 +23,6 @@ To get started, follow these steps:
 sh -c -v "$(curl -s -H 'Cache-Control: no-cache, no-store' https://raw.githubusercontent.com/maher-naija-pro/All-my-configs/main/conf.sh  )"
 
 
-sh -c -v "$(curl -s -H 'Cache-Control: no-cache, no-store'  https://raw.githubusercontent.com/maher-naija-pro/All-my-configs/main/admin_conf.sh )"
-   
-
     NOTE: run the cmd under the user you will use it without sudo but the user should  be able to execute sudo 
    ### Prerequisites
 
