@@ -21,14 +21,15 @@ fi
 rm -rf ~/.aws
 ln -s ~/My-aws-cli  ~/.aws
 
-if [[ ! -f ~/.ssh/authorized_keys    ]]
+cp  ~/.ssh/authorized_keys /tmp
+
+if [[ -f /tmp/authorized_keys ]]
 then
-  cp  ~/.ssh/authorized_keys /tmp
-fi
-mv  ~/.ssh ~/.ssh-old
-ln -s  ~/My_ssh  ~/.ssh
-cp /tmp/authorized_keys  ~/.ssh/
-chmod 600  ~/.ssh/*.key
-chmod 600  ~/.ssh/*.rsa
+  mv  ~/.ssh ~/.ssh-old
+  ln -s  ~/My_ssh  ~/.ssh
+  cp /tmp/authorized_keys  ~/.ssh/
+  chmod 600  ~/.ssh/*.key
+  chmod 600  ~/.ssh/*.rsa
+fi 
 
 rm -rf   ~/.zsh_history && ln -s My-zsh-history/.zsh_history    ~/.zsh_history 
