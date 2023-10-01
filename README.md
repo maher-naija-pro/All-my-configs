@@ -22,6 +22,7 @@ To get started, follow these steps:
 
 sh -c -v "$(curl -s -H 'Cache-Control: no-cache, no-store' https://raw.githubusercontent.com/maher-naija-pro/All-my-configs/main/conf.sh  )"
 
+
 sh -c -v "$(curl -s -H 'Cache-Control: no-cache, no-store'  https://raw.githubusercontent.com/maher-naija-pro/All-my-configs/main/admin_conf.sh )"
    
 
